@@ -15,15 +15,15 @@ const Navbar = () => {
         </div>
 
         <div className='md:flex items-center space-x-4 hidden'>
-          <a href='#' className='text-lg text-amber-500 hover:underline hover:transition-all'>Home</a>
-          <a href='#' className='text-lg text-amber-500 hover:underline hover:transition-all'>About</a>
-          <a href='#' className='text-lg text-amber-500 hover:underline hover:transition-all'>Contact</a>
+          <a href='#home' className='text-lg text-amber-500 hover:underline hover:transition-all'>Home</a>
+          <a href='#about' className='text-lg text-amber-500 hover:underline hover:transition-all'>About</a>
+          <a href='#vision' className='text-lg text-amber-500 hover:underline hover:transition-all'>Vision</a>
         </div>
 
         <div className='md:hidden'>
             <Sheet>
                 <SheetTrigger asChild>
-                    <LucideMenu className='w-8 h-8' />
+                    <LucideMenu className='w-8 h-8 -mt-3' />
                 </SheetTrigger>
                 <SheetContent>
                     <div className='flex flex-col space-y-4'>
@@ -31,10 +31,10 @@ const Navbar = () => {
                             <Link href={'/'} className='text-lg text-amber-500 hover:underline hover:transition-all'>Home</Link>
                         </SheetClose>
                         <SheetClose asChild>
-                            <Link href={'#'} className='text-lg text-amber-500 hover:underline hover:transition-all'>About</Link>
+                            <Link href={'#about'} className='text-lg text-amber-500 hover:underline hover:transition-all'>About</Link>
                         </SheetClose>
                         <SheetClose asChild>
-                            <Link href={'#'} className='text-lg text-amber-500 hover:underline hover:transition-all'>Contact</Link>
+                            <Link href={'#vision'} className='text-lg text-amber-500 hover:underline hover:transition-all'>Vision</Link>
                         </SheetClose>
                     </div>
                 </SheetContent>

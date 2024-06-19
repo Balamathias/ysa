@@ -7,7 +7,7 @@ import Image from 'next/image'
 const Vision = () => {
   return (
     <MaxWrapper className="flex justify-center items-center h-full">
-        <div className="flex flex-col space-y-3 py-2 px-2 md:flex-row md:space-x-4 md:items-stretch">
+        <div className="flex flex-col space-y-3 py-2 px-2 md:flex-row md:space-x-4 md:items-stretch" id='vision'>
 
           <div className="flex flex-col space-y-3 py-4 px-4 basis-1/2 bg-white shadow-sm rounded-xl items-stretch flex-1">
             <div className="flex flex-row space-x-2 items-center">

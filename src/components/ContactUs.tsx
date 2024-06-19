@@ -7,7 +7,7 @@ import { Button } from './ui/button'
 const ContactUs = () => {
   return (
     <MaxWrapper className="flex justify-center items-center h-full">
-        <div className="flex flex-col gap-y-3 py-2 px-2 md:flex-row md:space-x-4">
+        <div className="flex flex-col gap-y-3 py-2 px-2 md:flex-row md:space-x-4" id='about'>
             <div className="flex flex-col space-y-3 py-4 px-4 basis-1/2 rounded-xl items-stretch flex-1">
               <Image 
                 src="/images/contact.png" 
