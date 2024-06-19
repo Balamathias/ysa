@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Providers from "@/components/providers";
 
 const inter = Inter({ subsets: ["latin"], variable: '--font-sans' });
+const poppins = Poppins({
+  weight: ['100', '300', '500', '700'],
+  subsets: ['latin'],
+  variable: '--font-poppins'
+})
 
 export const metadata: Metadata = {
   title: "Young Start Academy",
@@ -18,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, 'antialised font-sans')}>
+      <body className={cn(poppins.className, 'antialised font-poppins')}>
         <Providers>
           {children}
         </Providers>

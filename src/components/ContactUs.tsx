@@ -7,6 +7,7 @@ import MaxWrapper from './MaxWrapper'
 import { Button } from './ui/button'
 import { toast } from 'sonner'
 import { Textarea } from './ui/textarea'
+import { Skeleton } from './ui/skeleton'
 
 const ContactUs = () => {
   const [email, setEmail] = useState('')
@@ -45,6 +46,7 @@ const ContactUs = () => {
                 height={1000}
                 width={1000} 
                 className="w-full rounded-xl h-full object-cover object-center"
+                loading='eager'
               />
             </div>
 
