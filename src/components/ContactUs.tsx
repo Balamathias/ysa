@@ -34,6 +34,9 @@ const ContactUs = () => {
       const { message } = await response.json()
       toast.success(message)
     }
+
+    setEmail('')
+    setMessage('')
   }
 
   return (
@@ -56,12 +59,12 @@ const ContactUs = () => {
               <div className="flex flex-col w-full space-y-3 py-3 sm:py-5">
                 <div className="flex flex-col space-y-2">
                   <label id="name" className="text-lg text-muted-foreground">Email</label>
-                  <Input defaultValue={email} onChange={e => setEmail(e.target.value)} type="email" id="email" name="email" placeholder="Enter your email" className="p-4 rounded-md ring-none focus:ring-0 focus-within:ring-0 shadow-0 focus:border-0 border-primary" />
+                  <Input value={email} onChange={e => setEmail(e.target.value)} type="email" id="email" name="email" placeholder="Enter your email" className="p-4 rounded-md ring-none focus:ring-0 focus-within:ring-0 shadow-0 focus:border-0 border-primary" />
                 </div>
 
                 <div className="flex flex-col space-y-2">
                   <label id="message" className="text-lg text-muted-foreground">Message</label>
-                  <Textarea defaultValue={message} onChange={e => setMessage(e.target.value)} id="message" name="message" placeholder="Enter your message..." className="p-4 rounded-md ring-none focus:ring-0 focus-within:ring-0 shadow-0 focus:border-0 border-primary" />
+                  <Textarea value={message} onChange={e => setMessage(e.target.value)} id="message" name="message" placeholder="Enter your message..." className="p-4 rounded-md ring-none focus:ring-0 focus-within:ring-0 shadow-0 focus:border-0 border-primary" />
                 </div>
 
                 <div className="flex flex-col space-y-2">
